@@ -1,0 +1,21 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "compiler",
+            "type": "shell",
+            "command": "gfortran",
+            "args": [
+                "-g",
+                "-Wall",
+                "-o",
+                "dragon_ball_z.exe",
+                "dragon_ball_z.f90",
+                "dragon_ball_module.f90"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}/Clase4"
+            }
+        }
+    ]
+}
