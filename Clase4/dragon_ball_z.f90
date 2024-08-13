@@ -1,3 +1,9 @@
+! Comandos que se pueden ingresar en la consola:
+! create <nombre>,<poder>  Ejemplo: create Gohan,1000
+! power <nombre>,<poder>   Ejemplo: power Gohan,100
+! injury <nombre>,<poder>  Ejemplo: injury Gohan,200
+! exit
+
 program dragon_ball_z
     use dragon_module  ! Uso del módulo dragon_module
     implicit none
