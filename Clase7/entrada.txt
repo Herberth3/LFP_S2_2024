@@ -1,0 +1,2 @@
+int variable = "Hola";
+cadena int = "#$#ee"#

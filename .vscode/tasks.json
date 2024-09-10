@@ -9,12 +9,12 @@
                 "-g",
                 "-Wall",
                 "-o",
-                "dragon_ball_z.exe",
-                "dragon_ball_z.f90",
-                "dragon_ball_module.f90"
+                "menu.exe",
+                "menu.f90",
+                "analizador.f90"
             ],
             "options": {
-                "cwd": "${workspaceFolder}/Clase4"
+                "cwd": "${workspaceFolder}/Clase7"
             }
         }
     ]
