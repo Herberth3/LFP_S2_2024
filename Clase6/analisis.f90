@@ -1,12 +1,20 @@
 program procesar_datos
     implicit none
     character(len=100) :: entrada
+    character(len=100) :: linea
     character(len=100) :: nombre
-    integer :: poblacion
+    integer :: poblacion, ios
     character(len=100) :: bandera
 
-    ! Leer el valor de entrada
-    read(*, '(A)') entrada
+    ! Inicializar la variable de entrada
+    entrada = ''
+
+    ! Leer el valor de entrada obtenida desde tkinter y concatenar cada linea al valor de entrada
+    do
+        read(*, '(A)', iostat = ios) linea
+        if (ios /= 0) exit   ! Se alcanzo el fin del archivo
+        entrada = trim(entrada) // trim(linea) // char(10) ! Concatenar la línea leida al valor de entrada y agregar un salto de línea
+    end do
 
     ! Procesar los atributos adicionales
     poblacion = 2352342
